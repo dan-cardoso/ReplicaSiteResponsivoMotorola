@@ -1,0 +1,39 @@
+section.container div#nomeempresa {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    background-color: #232323;
+    padding: 5px 0;
+    margin-bottom: 30px;
+
+}
+
+section.container article#conteudo {
+    width:90%;
+    text-align: center;
+    margin-left: 3%;
+}
+
+section.container article#conteudo img {
+    float: left;
+    margin-right: 2%;
+}
+
+section.container article#conteudo p {
+    font-size: 18px;
+    color: #666;
+    text-align: justify;
+    margin-top: 1%;
+
+}
+
+@media screen and (max-width: 992px) and (min-width: 668px) {
+
+    body {
+        background-color: purple;
+    }
+    section.container div#anuncioproduto {
+        background-color: red;
+
+    }
+}

@@ -1,0 +1,92 @@
+section.container div#anunciotablet {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    background-color: #cb602f;
+    padding: 5px 0;
+    display: none;
+}
+
+section.container article#conteudo {
+    width:60%;
+    float: left;
+}
+
+section.container article#conteudo h1 {
+    font-size: 22px;
+    color: #333;
+}
+
+section.container article#conteudo p {
+    font-size: 18px;
+    color: #666;
+}
+
+section.container aside#coluna {
+    width: 35%;
+    float: right;
+}
+
+section.container aside#coluna h2 {
+    font-size: 22px;
+    color: #333;
+}
+
+section.container aside#coluna p {
+    font-size: 18px;
+    color: #666;
+}
+
+
+
+@media screen and (max-width:992px) and (min-width:668px){
+
+    /*body{ 
+        background-color:green;
+    }*/
+
+    section.container div#anunciotablet {
+        display:block;
+    }
+
+}
+
+@media screen and (max-width:667px){
+
+    /*body{
+      background-color: purple;
+    }*/
+  
+     section.container div#anunciotablet{
+      display: block;
+      background-color: gray;
+    }
+  
+}
+
+@media screen and (max-width:457px){
+
+    /*body{
+      background-color: pink;
+    }*/
+
+    section.container div#anunciotablet, section.container div#banner {
+        display: none;
+    }
+
+    section.container header.topo nav.menu {
+        margin-bottom: 30px;
+    }
+}
+
+
+@media screen and (max-width:357px) {
+    /*body{
+        background-color: yellow;
+      }*/
+  
+      section.container article#conteudo, section.container aside#coluna {
+          width: 100%;
+          margin-bottom: 20px;
+      }
+}

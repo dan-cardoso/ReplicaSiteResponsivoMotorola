@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "trebuchet ms", arial;
+}
+
+/* body {
+    background-color: pink;
+}  */
+
+section.container {
+    width: 95%;
+    max-width: 1382px;   /*site responsivo: largura máxima */
+    height: auto;
+    margin: auto;
+}
+
+section.container header.topo div.logo {
+    width: 204px;
+    height: 84px;
+    /*background-color: red;*/
+    float: left;
+}
+
+section.container header.topo nav.menu {
+    width: 100%;
+    height: 40px;
+    background-color: #111111;
+    float: left;
+    margin-top: 80px;
+    border-radius: 5px;
+    margin-bottom: 2px;
+    text-align: center;
+}
+
+section.container header.topo nav.menu ul li {
+    display: inline;
+}
+
+section.container header.topo nav.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 40px; /* FUNCIONA COMO SE FOSSE MARGIN TOP- 'ABAIXA' TEXTO NA LINHA */
+    margin: 0 25px; /* espaçamento entre as opções da linha */
+}
+
+section.container header.topo nav.menu ul li a:hover {
+text-decoration: underline; /*sublinha o link quando mouse encosta */
+}
+
+section.container div#banner {
+    width: 100%;
+    height: auto;
+}
+
+section.container div#banner img {
+    width: 100%;
+
+}
+
+footer.rodape {
+    width: 100%;
+    height: 30px;
+    float: left;
+    background-color: black;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    color: white;
+    margin-top: 20px;
+}
+
+
+/*mudando o comportamento do site de acordo com tamanho de dispositivos */
+
+/* @media screen and (max-width:992px) and (min-width:668px){
+
+    body{ 
+        background-color:green;
+    }
+
+} */
+  
+    
+@media screen and (max-width:667px){
+
+    /* body{
+        background-color:purple;
+    } */
+    
+    section.container header.topo nav.menu ul li a {
+        font-size: 15px;
+        margin: 0 10px;
+    }
+}
+
+@media screen and (max-width:457px) {
+    /* body{
+        background-color:gray;
+    } */
+    
+    section.container header.topo div.logo {
+        float: none;    /* para tirar o float */
+        margin: auto; /*para centralizar */
+    }
+
+    section.container header.topo nav.menu {
+        height: auto;
+    }
+
+    section.container header.topo nav.menu ul li {
+        display: block;  /* muda de inline para bloco!!!! */
+        border-bottom: 1px solid #ccc;
+    }
+
+    section.container header.topo nav.menu ul li:last-child {
+        border: none;
+    }
+}
+
+/* 357   457   667    992       1382 tamanho max dispositivo */
